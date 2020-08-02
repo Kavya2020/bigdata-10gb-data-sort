@@ -25,6 +25,8 @@ Hardware Configurations
 •	L3 Cache			:	4 MB
 •	Memory			:	16GB
 
+![image](https://user-images.githubusercontent.com/59784424/89115834-b9007880-d441-11ea-917a-cf58ac02a807.png)
+
 Summary:
 
 This smart sort project tries to address real world use cases by giving the user flexibility in sorting the huge size input files. The project was run and implemented using a single node. For Smart Sort sorting, Hadoop used   mappers to sort the data. There are 2 mappers. These mappers are decided based on the number of data splits created by Hadoop during smart sort phase of the project. These splits are not same as the number of splits that are used during data generation phase. Smart sort sets the reducer to 1, which allows sorting data by two separate keys. We ran our project on local environment, hence we used duplication as 1 and not 3, which is default for Hadoop.We ran our project on local environment and we had to increase the JAVA heap size.
