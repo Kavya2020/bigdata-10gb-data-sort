@@ -35,7 +35,7 @@ Performance Analysis:
 
 CPU time is the sum of “User time” and “System time”.
 
- File Generation	 10 Min 
-Copying file to HDFS	~1 Min
-MapReduce Job	41 Min
+ File Generation	  10 Min 
+Copying file to HDFS	 ~1 Min
+MapReduce Job	          41 Min
 Post File Validation	1Hr (local)
