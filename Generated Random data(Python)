@@ -1,0 +1,18 @@
+Import random
+alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+f = open("gen.txt",'w')
+
+size = 0
+
+while size<10*(1<<30):
+	length = random.randint(10,20)
+	line = []
+	while len(line)<length:
+		line.append(random.choice(alpha))
+	f.write("".join(line))
+	f.write("\n")
+	size += length+1
+	print size*10/(1<<30)," percent complete\r",
+
+f.close()
